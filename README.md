@@ -12,6 +12,7 @@ cd RocoKingdoms
 > 与腾讯 / 官方无关。游戏名称、精灵、立绘及数值版权归原权利方所有。请合理使用爬虫与自动化，风险自负。
 
 ---
+<img width="1287" height="830" alt="image" src="https://github.com/user-attachments/assets/2198f627-00fe-427d-8188-240b8afeafdc" />
 
 ## 子项目
 
