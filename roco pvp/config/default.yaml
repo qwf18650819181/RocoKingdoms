@@ -1,0 +1,40 @@
+# 游戏窗口标题关键字（部分匹配）
+window_title_keyword: "洛克王国"
+
+# OpenCV 模板匹配阈值（0~1，越低越灵敏）
+match_threshold: 0.55
+
+# 主循环检测间隔（秒）
+poll_interval_sec: 0.8
+
+# calculator 导出的 JSON 目录（相对项目根目录）
+calculator_data_dir: "../roco calculator/public/data"
+
+# PVP 队伍配置（与 calculator 导出的 pvp-team-*.json 格式兼容）
+team_file: "teams/main_team.json"
+
+# 模板图目录（需自行截取游戏内 UI）
+templates_dir: "templates/pvp"
+
+# 输入驱动：interception | dry_run（仅日志，不点击）
+input_driver: "interception"
+
+# YOLO 模型（训练后路径，见 yolo/train.py）
+yolo:
+  enabled: true
+  model_path: "yolo/runs/pvp-spirits/weights/best.pt"
+  conf: 0.45
+  iou: 0.5
+
+# 技能快捷键：槽位 1~4 对应键盘（游戏内需绑定相同按键）
+skill_keys:
+  - "1"
+  - "2"
+  - "3"
+  - "4"
+
+# 模板名 → 文件名（不含扩展名，放 templates/pvp/ 下）
+battle_templates:
+  in_battle: "battle_hud"
+  my_turn: "turn_indicator"
+  pvp_queue: "pvp_queue"

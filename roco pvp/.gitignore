@@ -1,0 +1,13 @@
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+user_prefs.yaml
+data/
+yolo/runs/
+yolo/dataset/images/
+yolo/dataset/labels/
+*.pt
+*.onnx
+logs/
+screenshots/

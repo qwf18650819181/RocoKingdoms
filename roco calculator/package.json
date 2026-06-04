@@ -1,0 +1,35 @@
+{
+  "name": "roco-calculator",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "import-data": "python scripts/import_data.py",
+    "app-icon": "python scripts/generate_app_icon.py && cargo clean --manifest-path src-tauri/Cargo.toml && cargo build --release --manifest-path src-tauri/Cargo.toml && node scripts/patch_exe_icon.mjs",
+    "patch-icon": "node scripts/patch_exe_icon.mjs",
+    "tauri:dev": "npm run tauri dev",
+    "tauri:build": "npm run tauri build && npm run patch-icon",
+    "run:release": "src-tauri/target/release/roco-calculator.exe",
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "tauri": "tauri"
+  },
+  "dependencies": {
+    "@tauri-apps/api": "^2",
+    "@tauri-apps/plugin-dialog": "^2.7.1",
+    "@tauri-apps/plugin-fs": "^2.5.1",
+    "@tauri-apps/plugin-opener": "^2",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
+  "devDependencies": {
+    "@tauri-apps/cli": "^2",
+    "@types/react": "^19.1.8",
+    "@types/react-dom": "^19.1.6",
+    "@vitejs/plugin-react": "^4.6.0",
+    "rcedit": "^5.0.1",
+    "typescript": "~5.8.3",
+    "vite": "^7.0.4"
+  }
+}

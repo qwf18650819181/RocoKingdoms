@@ -1,0 +1,39 @@
+# IDE / OS
+.cursor/
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Node / frontend build
+**/node_modules/
+**/dist/
+**/dist-ssr/
+*.local
+
+# Rust / Tauri
+**/target/
+
+# Python
+**/__pycache__/
+**/*.py[cod]
+**/.pytest_cache/
+**/.venv/
+*.pt
+*.onnx
+
+# roco spider：图片可爬虫重新下载，CSV 纳入版本库
+roco spider/output/images/
+
+# roco pvp：本地同步数据与训练产物
+roco pvp/data/
+roco pvp/yolo/runs/
+roco pvp/yolo/dataset/images/
+roco pvp/yolo/dataset/labels/
+roco pvp/screenshots/
+roco pvp/logs/
+roco pvp/user_prefs.yaml
+roco pvp/teams/build_log.txt
+
+# Logs
+*.log
